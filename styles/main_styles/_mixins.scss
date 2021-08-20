@@ -1,0 +1,43 @@
+@mixin Body {
+    font: {
+        family: "Montserrat-Regular";
+        size: 14px;
+    }
+    // color: $color-DarkShade75;
+    line-height: 17px;
+}
+
+@mixin h1 {
+    font: {
+        family: "Montserrat-Bold";
+        size: 24px;
+    }
+    // color: $color-DarkShade100;
+    line-height: 29px;
+}
+
+@mixin h2 {
+    font: {
+        family: "Montserrat-Bold";
+        size: 19px;
+    }
+    // color: $color-DarkShade100;
+    line-height: 23px;
+}
+
+@mixin h3 {
+    font: {
+        family: "Montserrat-Bold";
+        size: 12px;
+    }
+    // color: $color-DarkShade100;
+    line-height: 15px;
+}
+
+@mixin button {
+    // border-radius: $button-radius;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}

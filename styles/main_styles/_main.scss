@@ -1,0 +1,36 @@
+@import './varibles';
+@import './fonts';
+@import './mixins';
+* {
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 86%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    width: 190px;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-purple;
+    &__icon {
+        fill: $color-DarkYellow;
+        width: 35px;
+        height: 35px;
+    }
+    &__title {
+        display: flex;
+        align-items: flex-end;
+        @include h2;
+        font-size: 29px;
+        & a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}
