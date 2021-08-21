@@ -1,6 +1,10 @@
 @import './varibles';
 @import './fonts';
 @import './mixins';
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0 auto;
 }

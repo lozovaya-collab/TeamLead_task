@@ -8,6 +8,10 @@
   src: url("../../assets/fonts/Montserrat-Regular.woff2"), url("../assets/fonts/Montserrat-Regular.woff"), url("../assets/fonts/Montserrat-Regular.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0 auto;
 }
@@ -167,5 +171,104 @@
   fill: rgba(243, 230, 16, 0.93);
   width: 25px;
   height: 25px;
+}
+
+.promo {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.promo .wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.promo_bg {
+  position: absolute;
+  z-index: 5;
+}
+
+.promo_name-of-drug {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  line-height: 29px;
+  font-size: 50px;
+  color: rgba(249, 236, 20, 0.93);
+}
+
+.promo_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  font-size: 40px;
+}
+
+.promo_information__image {
+  height: 600px;
+  margin: 0 20% 0 0;
+}
+
+.promo_information__details {
+  margin: 0;
+}
+
+.promo_information__details_compound {
+  font-family: "Montserrat-Bold";
+  margin-bottom: 40px;
+}
+
+.promo_information__details_components {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.promo_information__details_components__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo_information__details_components__item svg {
+  width: 30px;
+  height: 30px;
+  fill: rgba(243, 230, 16, 0.93);
+  margin: 20px 10px 20px 0;
+}
+
+.promo_information__details_components__item span {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

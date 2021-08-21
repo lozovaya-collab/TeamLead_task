@@ -1,0 +1,63 @@
+.promo {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    & .wrapper {
+        position: relative;
+        z-index: 10;
+    }
+    &_bg {
+        position: absolute;
+        z-index: 5;
+    }
+    &_name-of-drug {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include h1;
+        font-size: 50px;
+        color: $color-yellow;
+    }
+    &_information {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        @include Body;
+        font-size: 40px;
+        &__image {
+            height: 600px;
+            margin: 0 20% 0 0;
+        }
+        &__details {
+            margin: 0;
+            &_compound {
+                font-family: "Montserrat-Bold";
+                margin-bottom: 40px;
+            }
+            &_components {
+                list-style-type: none;
+                padding: 0;
+                margin-left: 30px;
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    & svg {
+                        width: 30px;
+                        height: 30px;
+                        fill: $color-DarkYellow;
+                        margin: 20px 10px 20px 0;
+                    }
+                    & span {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

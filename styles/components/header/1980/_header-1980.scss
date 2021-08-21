@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background: $color-white;
+    color: $color-purple;
+    @include Body;
+    font-size: 20px;
+    box-shadow: $shadow-header;
+    & .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        width: 40%;
+        margin: 0;
+        &_list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            &__item {
+                &_link {
+                    cursor: pointer;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-LightPurple;
+                    }
+                }
+            }
+        }
+    }
+}
