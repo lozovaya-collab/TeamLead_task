@@ -38,3 +38,16 @@ html {
         }
     }
 }
+
+.active-button {
+    opacity: 0.6;
+    &:hover {
+        background-color: $color-LightWhite;
+        border-radius: 0px;
+        opacity: 1;
+    }
+}
+
+.inactive-button {
+    opacity: 0.2;
+}

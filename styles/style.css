@@ -61,6 +61,20 @@ html {
   text-decoration: none;
 }
 
+.active-button {
+  opacity: 0.6;
+}
+
+.active-button:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: 0px;
+  opacity: 1;
+}
+
+.inactive-button {
+  opacity: 0.2;
+}
+
 .header {
   width: 100%;
   height: 100px;
@@ -413,14 +427,7 @@ html {
   cursor: pointer;
   width: 100px;
   height: 800px;
-  opacity: 0.3;
   background: url("../../../../assets/icons/left-arrow.svg") center center no-repeat;
-}
-
-.feedbacks__switch-prev:hover, .feedbacks__switch-next:hover {
-  background-color: rgba(255, 255, 255, 0.281);
-  border-radius: 0px;
-  opacity: 0.6;
 }
 
 .feedbacks__switch-next {
@@ -428,17 +435,22 @@ html {
 }
 
 .feedbacks__slider {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   width: 80%;
   height: 800px;
 }
 
 .feedbacks__slider_item {
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+  position: absolute;
   text-align: center;
   background-color: #fff;
   width: 100%;

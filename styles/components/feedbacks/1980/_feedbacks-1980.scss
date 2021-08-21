@@ -14,24 +14,22 @@
             @include button;
             width: 100px;
             height: 800px;
-            opacity: 0.3;
             background: url('../../../../assets/icons/left-arrow.svg') center center no-repeat;
-            &:hover {
-                background-color: $color-LightWhite;
-                border-radius: 0px;
-                opacity: 0.6;
-            }
         }
         &-next {
             background: url('../../../../assets/icons/right-arrow.svg') center center no-repeat;
         }
     }
     &__slider {
+        position: relative;
         display: flex;
         align-items: center;
+        overflow: hidden;
         width: 80%;
         height: 800px;
         &_item {
+            transition: left 1s ease;
+            position: absolute;
             text-align: center;
             background-color: $color-white;
             width: 100%;
