@@ -1,0 +1,118 @@
+.order {
+    width: 100%;
+    height: 800px;
+    background: url('../../../../assets/images/yellow_bg.svg') center center no-repeat;
+    &__title {
+        color: $color-purple;
+        height: 50px;
+    }
+    & .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 180px;
+        height: 90px;
+        &_hours,
+        &_minutes {
+            width: 80px;
+            height: 70px;
+            background-color: $color-white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include Body;
+            &__numbers {
+                color: $color-yellow;
+                font-size: 30px;
+                font-family: "Montserrat-Bold";
+                margin-bottom: 10px;
+            }
+            &__text {
+                color: $color-purple;
+            }
+        }
+    }
+    &__information {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_product {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            &_img {
+                margin-bottom: 40px;
+            }
+            &_price {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                width: 150px;
+                height: 80px;
+                &-new {
+                    @include h2;
+                    margin-bottom: 20px;
+                    color: $color-purple;
+                    text-align: center;
+                    font-size: 40px;
+                    letter-spacing: -7px;
+                    animation: blur .75s ease-out infinite;
+                    text-shadow: 0px 0px 5px $color-white, 0px 0px 7px $color-white;
+                }
+                &-old {
+                    @include Body;
+                    text-decoration: line-through;
+                    text-decoration-color: $color-purple;
+                    font-size: 19px;
+                }
+            }
+        }
+        &_form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 40%;
+            background-color: $color-white;
+            border-radius: 10px;
+            &__title {
+                @include h3;
+                color: $color-purple;
+                font-size: 30px;
+                width: 60%;
+                text-align: center;
+                margin-bottom: 50px;
+                line-height: 32px;
+            }
+            & input {
+                @include Body;
+                outline: none;
+                border: 1px solid $color-LightPurple;
+                border-radius: 10px;
+                margin-bottom: 50px;
+                width: 50%;
+                height: 50px;
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size: 20px;
+            }
+            &__btn {
+                width: 50%;
+            }
+        }
+    }
+}

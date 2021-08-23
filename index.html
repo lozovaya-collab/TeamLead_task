@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li class="header__menu_list__item">
-                        <a class="header__menu_list__item_link">
+                        <a href="#form" class="header__menu_list__item_link">
                             Заказать
                         </a>
                     </li>
@@ -113,7 +113,7 @@
             </div>
             <div class="compound__product">
                 <img src="./assets/images/prod.png" alt="product" class="compound__product_image">
-                <button class="compound__product_order" type="button" onclick="location.href='index.html#footer'">
+                <button class="compound__product_order" type="button" onclick="location.href='index.html#form'">
                     Заказать
                 </button>
             </div>
@@ -202,7 +202,55 @@
             </ul>
         </div>
     </section>
-    <footer class="footer" id="footer">
+    <section class="order" id="form">
+        <div class="wrapper">
+            <h2 class="promo_name-of-drug order__title">
+                LevelUp
+            </h2>
+            <div class="order__time">
+                <div class="order__time_hours">
+                    <span class="order__time_hours__numbers">
+                        30
+                    </span>
+                    <span class="order__time_hours__text">
+                        МИНУТ
+                    </span>
+                </div>
+                <div class="order__time_minutes">
+                    <span class="order__time_minutes__numbers">
+                        00
+                    </span>
+                    <span class="order__time_minutes__text">
+                        СЕКУНД
+                    </span>
+                </div>
+            </div>
+            <div class="order__information">
+                <div class="order__information_product">
+                    <img src="./assets/images/prod.png" alt="product" class="order__information_product_img">
+                    <div class="order__information_product_price">
+                        <span class="order__information_product_price-new">
+                            999 &#8381;
+                        </span>
+                        <span class="order__information_product_price-old">
+                            1599 &#8381;
+                        </span>
+                    </div>
+                </div>
+                <form action="#" class="order__information_form">
+                    <h3 class="order__information_form__title">
+                        Закажи прямо сейчас!
+                    </h3>
+                    <input type="text" placeholder="Иван">
+                    <input class="order__information_form__inumber" type="num" placeholder="85554463598">
+                    <button class="compound__product_order order__information_form__btn" type="submit">
+                        Заказать
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
         <div class="wrapper">
             <div class="footer__my-github">
                 <a href="https://github.com/lozovaya-collab" class="footer__my-github_link">

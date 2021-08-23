@@ -3,13 +3,16 @@ const sliderWidth = sliders[0].clientWidth
 const nextButton = document.querySelector('.feedbacks__switch-next')
 const prevButton = document.querySelector('.feedbacks__switch-prev')
 
+const hours = document.querySelector('.order__time_hours__numbers')
+const minutes = document.querySelector('.order__time_minutes__numbers')
+
 sliders[0].style.left = '0px'
 sliders[1].style.left = `${sliderWidth}px`
 sliders[2].style.left = `${sliderWidth * 2}px`
 
 
 const nextSlider = () => {
-    console.log('sdfg');
+
     if (sliders[2].style.left !== `0px`) {
         prevButton.removeAttribute('disabled')
         prevButton.classList.toggle('inactive-button')
@@ -60,5 +63,43 @@ const prevSlider = () => {
 
 }
 
+const setTimer = () => {
+    let valueHours = Number(hours.innerHTML)
+    let valueMin = Number(minutes.innerHTML)
+    if (valueMin === 0 && valueHours === 0) {
+        document.querySelector('.order__time_hours').innerHTML = "ВРЕМЯ"
+        document.querySelector('.order__time_hours').style.backgroundColor = "rgb(247, 71, 71)"
+        document.querySelector('.order__time_minutes').innerHTML = "ВЫШЛО"
+        document.querySelector('.order__time_minutes').style.backgroundColor = "rgb(247, 71, 71)"
+
+    } else {
+        if (valueMin === 0) {
+            valueHours = valueHours - 1
+            if (valueHours >= 0 && valueHours <= 10) {
+                if (valueHours !== 0) {
+                    hours.innerHTML = `0${valueHours - 1}`
+                } else {
+                    hours.innerHTML = `0${valueHours}`
+                }
+            } else {
+                hours.innerHTML = `${valueHours}`
+            }
+            minutes.innerHTML = '59'
+        } else if (valueMin >= 0 && valueMin <= 10) {
+            minutes.innerHTML = `0${valueMin - 1}`
+        } else {
+            minutes.innerHTML = valueMin - 1
+        }
+    }
+}
+
 nextButton.addEventListener('click', nextSlider)
 prevButton.addEventListener('click', prevSlider)
+
+setInterval(setTimer, 1000)
+
+document.querySelector('.order__information_form__inumber').addEventListener('input',
+    function(e) {
+        this.value = this.value.replace(/[^\d.]/g, '');
+    }
+)
