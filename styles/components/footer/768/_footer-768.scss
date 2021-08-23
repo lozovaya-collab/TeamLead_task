@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 300px;
+        font-size: 20px;
+        & .wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+        }
+        &__my-github {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            width: 190px;
+            &_link {
+                text-decoration: none;
+                & svg {
+                    fill: $color-DarkYellow;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

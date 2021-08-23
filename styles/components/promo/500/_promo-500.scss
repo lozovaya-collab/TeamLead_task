@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+    .promo {
+        height: 600px;
+        &_information {
+            flex-direction: column;
+            &__image {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+    .promo-info {
+        height: 800px;
+        &__body {
+            justify-content: flex-start;
+            flex-direction: column;
+            font-size: 15px;
+            height: 700px;
+            &_text {
+                padding: 20px;
+            }
+        }
+        &__list {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style-type: none;
+            @include Body;
+            font-size: 15px;
+            color: $color-purple;
+            font-family: "Montserrat-Bold";
+            & li {
+                margin: 3% 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 790px) {
+    .feedbacks {
+        &__slider {
+            &_item {
+                height: 90%;
+                &__avatar {
+                    width: 200px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__switch {
+            &-prev,
+            &-next {
+                @include button;
+                width: 30px;
+                height: 500px;
+                background: url('../../../../assets/icons/left-arrow.svg') center center no-repeat;
+            }
+            &-next {
+                background: url('../../../../assets/icons/right-arrow.svg') center center no-repeat;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@media screen and (max-width: 1200px) {
+    .promo-info {
+        height: 500px;
+        &__body {
+            height: 384px;
+            font-size: 15px;
+            &_img {
+                margin-right: 20px;
+                height: 300px;
+            }
+            &_text {
+                border: 10px solid $color-yellow;
+                padding: 30px;
+            }
+        }
+        &__list {
+            margin: 30px 0 0 0;
+            font-size: 20px;
+            font-family: "Montserrat-Bold";
+        }
+    }
+}

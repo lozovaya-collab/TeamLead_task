@@ -1,0 +1,18 @@
+@media screen and (max-width: 410px) {
+    .promo-info {
+        height: 1000px;
+        background: url('../../../../assets/images/white_bg.svg') center center repeat;
+        &__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 854px;
+            @include Body;
+            font-size: 15px;
+            color: $color-purple;
+            &_text {
+                padding: 20px;
+            }
+        }
+    }
+}

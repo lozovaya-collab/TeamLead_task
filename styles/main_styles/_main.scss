@@ -57,3 +57,63 @@ html {
         text-shadow: 0px 0px 10px $color-white, 0px 0px 10px $color-white, 0px 0px 25px $color-white, 0px 0px 25px $color-white, 0px 0px 25px $color-white, 0px 0px 25px $color-white, 0px 0px 25px $color-white, 0px 0px 25px $color-white, 0px 0px 50px $color-white, 0px 0px 50px $color-white, 0px 0px 50px $color-LightYellow, 0px 0px 150px $color-LightYellow, 0px 10px 100px $color-LightYellow, 0px 10px 100px $color-LightYellow, 0px 10px 100px $color-LightYellow, 0px 10px 100px $color-LightYellow, 0px -10px 100px $color-LightYellow, 0px -10px 100px $color-LightYellow;
     }
 }
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 20%;
+    }
+    .burger {
+        transition: right 1s linear;
+        z-index: 100;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        top: 0;
+        background-color: $color-yellow;
+        &_btn {
+            @include button;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 20px;
+                height: 20px;
+                fill: $color-purple;
+                &:hover {
+                    fill: $color-white;
+                }
+            }
+        }
+        &_list {
+            text-align: center;
+            @include Body;
+            font-size: 20px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            &_item {
+                margin-bottom: 35px;
+                & a {
+                    text-decoration: none;
+                    color: $color-purple;
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

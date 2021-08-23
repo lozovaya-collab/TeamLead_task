@@ -1,0 +1,35 @@
+@media screen and (max-width: 1200px) {
+    .feedbacks {
+        height: 500px;
+        &__switch {
+            &-prev,
+            &-next {
+                height: 500px;
+            }
+        }
+        &__slider {
+            width: 60%;
+            height: 500px;
+            &_item {
+                transition: left 1s ease;
+                position: absolute;
+                text-align: center;
+                background-color: $color-white;
+                width: 100%;
+                height: 80%;
+                &__avatar {
+                    width: 300px;
+                }
+                &__name {
+                    font-family: "Montserrat-Bold";
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                }
+                &__text {
+                    padding: 0 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

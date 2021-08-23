@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px) {
+    .header {
+        &__menu {
+            &_list {
+                &__item {
+                    &_link {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

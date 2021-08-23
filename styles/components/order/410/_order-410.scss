@@ -1,0 +1,36 @@
+@media screen and (max-width: 410px) {
+    .order {
+        &__information {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            &_form {
+                height: 90%;
+                width: 80%;
+                &__title {
+                    font-size: 20px;
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
+                & input {
+                    @include Body;
+                    outline: none;
+                    border: 1px solid $color-LightPurple;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                    width: 60%;
+                    height: 30px;
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                    font-size: 12px;
+                }
+                &__btn {
+                    width: 60%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

@@ -103,3 +103,32 @@ document.querySelector('.order__information_form__inumber').addEventListener('in
         this.value = this.value.replace(/[^\d.]/g, '');
     }
 )
+
+// Бургер
+const burger = document.querySelector('.header__menu_btnBurger')
+const menu = document.querySelector('.burger')
+const crossBurger = document.querySelector('.burger_btn')
+const linkBurger = document.querySelectorAll('.burger_list_item')
+
+let isOpenBurger = false
+
+const openBurger = () => {
+    if (!isOpenBurger) {
+        menu.style.right = "0"
+        isOpenBurger = true
+    }
+}
+
+const closeBurger = () => {
+    if (isOpenBurger) {
+        menu.style.right = "-100%"
+        isOpenBurger = false
+    }
+}
+
+burger.addEventListener('click', openBurger)
+crossBurger.addEventListener('click', closeBurger)
+
+for (let i = 0; i < linkBurger.length; i++) {
+    linkBurger[i].addEventListener('click', closeBurger)
+}

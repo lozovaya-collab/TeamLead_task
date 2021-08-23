@@ -1,0 +1,14 @@
+@media screen and (max-width: 410px) {
+    .feedbacks {
+        &__slider {
+            width: 100%;
+            margin: 0;
+            &_item {
+                height: 100%;
+                &__avatar {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

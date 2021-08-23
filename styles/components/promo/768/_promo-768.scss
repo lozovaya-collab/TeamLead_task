@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+    .promo {
+        height: 400px;
+        &_information {
+            font-size: 20px;
+            &__image {
+                height: 200px;
+            }
+            &__details {
+                &_compound {
+                    font-size: 15px;
+                    margin-bottom: 20px;
+                }
+                &_components {
+                    &__item {
+                        & span {
+                            font-size: 15px;
+                        }
+                        & svg {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

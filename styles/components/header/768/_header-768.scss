@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+    .header {
+        height: 70px;
+        font-size: 15px;
+        &__menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            width: 40%;
+            margin: 0;
+            &_list {
+                display: none;
+            }
+            &_btnBurger {
+                transition: fill 0.2s linear;
+                cursor: pointer;
+                display: block;
+                fill: $color-purple;
+                width: 2em;
+                height: 1.375em;
+                margin-right: 0;
+                &:hover {
+                    fill: $color-yellow;
+                }
+            }
+        }
+    }
+}

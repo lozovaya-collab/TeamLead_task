@@ -1,0 +1,25 @@
+@media screen and (max-width: 410px) {
+    @media screen and (max-width: 768px) {
+        .compound {
+            &__product {
+                &_image {
+                    height: 200px;
+                }
+                &_order {
+                    width: 140px;
+                }
+            }
+            &__components {
+                &_item {
+                    &__name {
+                        font-size: 9px;
+                    }
+                    &__img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

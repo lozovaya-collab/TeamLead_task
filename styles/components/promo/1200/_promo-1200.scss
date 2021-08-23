@@ -1,0 +1,26 @@
+@media screen and (max-width: 1200px) {
+    .promo {
+        height: 500px;
+        &_name-of-drug {
+            font-size: 40px;
+        }
+        &_information {
+            font-size: 25px;
+            &__image {
+                height: 300px;
+            }
+            &__details {
+                &_components {
+                    &__item {
+                        display: flex;
+                        align-items: center;
+                        & svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
