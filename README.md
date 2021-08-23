@@ -1,5 +1,5 @@
 ﻿# TeamLead_task
 
-Результат можете проверить по ссылке: [результат] [id]
+Результат можете проверить по ссылке: [результат]
 
-[id]: https://lozovaya-collab.github.io/TeamLead_task/
+[результат]: https://lozovaya-collab.github.io/TeamLead_task/
