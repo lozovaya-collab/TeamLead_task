@@ -14,10 +14,10 @@
             @include button;
             width: 100px;
             height: 800px;
-            background: url('../../../../assets/icons/left-arrow.svg') center center no-repeat;
+            background: url('../assets/icons/left-arrow.svg') center center no-repeat;
         }
         &-next {
-            background: url('../../../../assets/icons/right-arrow.svg') center center no-repeat;
+            background: url('../assets/icons/right-arrow.svg') center center no-repeat;
         }
     }
     &__slider {
