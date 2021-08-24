@@ -541,7 +541,7 @@ html {
 .compound {
   width: 100%;
   height: 800px;
-  background: url("../../../../assets/images/white_bg.svg") center center no-repeat;
+  background: url("../assets/images/white_bg.svg") center center no-repeat;
 }
 
 .compound .wrapper {
@@ -716,7 +716,7 @@ html {
 .feedbacks {
   width: 100%;
   height: 800px;
-  background: url("../../../../assets/images/yellow_bg.svg") center center no-repeat;
+  background: url("../assets/images/yellow_bg.svg") center center no-repeat;
 }
 
 .feedbacks .wrapper {
@@ -740,11 +740,11 @@ html {
   cursor: pointer;
   width: 100px;
   height: 800px;
-  background: url("../../../../assets/icons/left-arrow.svg") center center no-repeat;
+  background: url("../assets/icons/left-arrow.svg") center center no-repeat;
 }
 
 .feedbacks__switch-next {
-  background: url("../../../../assets/icons/right-arrow.svg") center center no-repeat;
+  background: url("../assets/icons/right-arrow.svg") center center no-repeat;
 }
 
 .feedbacks__slider {
@@ -877,7 +877,7 @@ html {
 .promo-info {
   width: 100%;
   height: 800px;
-  background: url("../../../../assets/images/white_bg.svg") center center no-repeat;
+  background: url("../assets/images/white_bg.svg") center center no-repeat;
 }
 
 .promo-info .wrapper {
@@ -1021,7 +1021,7 @@ html {
 @media screen and (max-width: 410px) {
   .promo-info {
     height: 1000px;
-    background: url("../../../../assets/images/white_bg.svg") center center repeat;
+    background: url("../assets/images/white_bg.svg") center center repeat;
   }
   .promo-info__body {
     display: -webkit-box;
@@ -1048,7 +1048,7 @@ html {
 .order {
   width: 100%;
   height: 800px;
-  background: url("../../../../assets/images/yellow_bg.svg") center center no-repeat;
+  background: url("../assets/images/yellow_bg.svg") center center no-repeat;
 }
 
 .order__title {
